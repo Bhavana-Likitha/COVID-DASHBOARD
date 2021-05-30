@@ -9,7 +9,6 @@
 	var deaths = new Array();
 	var active = new Array();
 	var recovered = new Array();
-	let err = " ";
    
 	async function getData() {
 	  const d = await fetch(
@@ -37,7 +36,7 @@
 		}
 		head = true;
 	  } else if (param == false) {
-		err = "Enter A Valid Country With First Letter Capital";
+		alert("Enter a Valid country with first letter capital");
 	  }
 	}
    </script>
@@ -133,7 +132,6 @@
 		</div>
    </div>
    {/each}
-   <h6 style="font-size:30px;text-align:center;">{err}</h6>
    </div>
    <style>
 	 .nav {
